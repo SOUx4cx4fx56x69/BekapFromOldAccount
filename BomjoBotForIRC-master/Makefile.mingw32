@@ -1,0 +1,2 @@
+all:
+	i686-w64-mingw32-gcc-posix -DCURL_STATICLIB -L. -Iinclude/ AntiQubick.c client.c allThreads.c strings.c util.c http.c commands.c -lpthread -lws2_32 -lcurldll

@@ -1,0 +1,38 @@
+html{
+background-color:#DCDCDC;
+}
+
+#wrap {
+
+	min-width: 800px;
+	max-width: 1980;
+	min-height: 100%;
+	margin: 0 auto;
+	background-color: #FFFFFF;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#first{
+padding-left:25px;
+margin-left:10px;
+text-align:center;
+font-size:150%;
+}
+
+.content {
+	min-height: 3em;
+	overflow: hidden;
+	line-height: 1.4em;
+	font-family: "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	color: #333333;
+	padding-bottom: 1px;
+
+}
+.clear {
+	display: block;
+	clear: both;
+	font-size: 1px;
+	line-height: 1px;
+	background: transparent;
+}

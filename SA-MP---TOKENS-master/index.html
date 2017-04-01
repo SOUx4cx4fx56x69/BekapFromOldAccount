@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>Generate Tokens</title>
+<meta charset=utf-8>
+ <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+<style>
+.form-control{
+margin: 0 auto;
+}
+</style>
+<div id="wrap" style="">
+<div style=text-align:center>
+<div class=header>
+<img src=img/logo.png>
+</div>
+<div class=static>
+<div class="navbar-form navbar-center">
+<select class="form-control" id=what>
+<option value="1">Assistant Sheriff</option>
+<option value="2">Chief</option>
+<option value="3">Commander</option>
+<option value="4">CPT</option>
+<option value="5">LT</option>
+<option value="6">Deputy Cheriff</option>
+<option value="7">SGT</option>
+<option value="8">Sheriff</option>
+<option value="9">Undersheriff</option>
+</select>
+<input class="form-control" style="width:30%;text-align:center;" type=textarea maxlength=3 id=nomer placeholder="Номер от 000 до 999" style="width:159px;height:20px;text-align:center;">
+<button class="form-control btn btn-info" id=submit>получить значок</button><br>
+</div>
+</div>
+<div class=image>
+</div>
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Ошибка</h4>
+      </div>
+      <div class="modal-body">
+
+      </div>
+      <div class="modal-footer">
+
+      </div>
+    </div>
+
+  </div>
+</div>
+<button class="copythis" onClick="CopyClipboard();">Скопировать</button>
+<script src=jquery.js></script>
+<script src=js/bootstrap.js></script>
+<script src=js/main.js></script>
+</body>
+</html>

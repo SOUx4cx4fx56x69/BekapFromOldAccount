@@ -1,0 +1,5 @@
+Options +FollowSymlinks
+RewriteEngine On
+RewriteRule ^badge/([^/]+)/([^/]+) /form.php?w=$1&n=$2 [NC]
+
+

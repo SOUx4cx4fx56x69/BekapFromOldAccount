@@ -1,0 +1,18 @@
+#bigdatashaltaybaltay{
+    border: 1px groove aqua;
+    width:320px;
+    height:120px;
+
+
+    display:none;
+    color:#222;
+    background-image:linear-gradient(top, rgb(215, 215, 216) 0%, rgba(255, 255, 255, 0.99)  100%);
+    background-image:-webkit-linear-gradient(top, rgb(215, 215, 216) 0%, rgba(255, 255, 255, 0.99)  100%);
+    background-image:url("../img/texture.png");
+    background-attachment: fixed;
+    background-size:cover;
+   float:right;
+}
+.copythis{
+display:none;
+}

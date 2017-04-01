@@ -1,0 +1,14 @@
+body{
+margin: 0 auto;
+padding: 0 auto;
+margin-top:15%;
+background:#EEEEE7;
+background: linear-gradient(to right, #dcdcdc, #e8e8e8);
+}
+div.static {
+position:static;
+margin-bottom:35px;
+}
+.header{
+margin-bottom:5%;
+}
