@@ -7,7 +7,7 @@ int main(int argCount, char**argList)
 {
 if(argCount < 3) _exit("EXAMPLE: PROGRAM FILE \"TEXT\"");
 char buff[SIZE];
-memset(buff,0,sizeof(buff)); // set all to zero in array
+memset(buff,0,SIZE); // set all to zero in array
 FILE * dst = fopen(argList[1],"r+b");
 if(!dst)
 {
