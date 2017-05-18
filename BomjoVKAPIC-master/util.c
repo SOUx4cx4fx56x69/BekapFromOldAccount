@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include "bomjvkapi.h"
-
+#include <string.h>
 void
 removeNewLine(char*buf)
 {
@@ -12,15 +12,7 @@ if(*buf=='\n') *buf='\0';
 }
 
 void
-toTrash(void *ptr, size_t size, size_t nmemb, void *stream)
+toTrash(void *ptr, size_t size, size_t nmemb, void *stream,char*__BUFFERANSWER__)
 {
  strcpy(__BUFFERANSWER__,ptr);
-}
-
-void
-_getToken(char Token [])
-{
-unsigned int i;
-while(*Token)
- __TOKEN__[i++]=*Token++;
 }
