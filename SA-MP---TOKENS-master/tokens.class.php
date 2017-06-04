@@ -26,7 +26,7 @@ $this->color = imagecolorallocate( $this->pic, $red, $green, $blue );
 $this->width = $width;
 }
 
-public function writeNumbers($text,$maxsize=3,$offset=351,$size=31,$angle=0,$y=720)
+public function writeNumbers($text,$maxsize=3,$offset=112,$size=15,$angle=0,$y=264)
 {
 //
 if(strlen($text) > $maxsize) return die( "ERROR: maxsize text == ".$maxsize );
