@@ -2,6 +2,7 @@
 /*
 ...Warlock-Dalbaeb...
 Xyuta 17.?.17
+shitcode drevnue govno mamonta
 */
 define("_DIR", "img/");
 require_once( "functions.php" );
