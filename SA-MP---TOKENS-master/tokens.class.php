@@ -17,16 +17,16 @@ $this->template=$template;
 $this->InitImage();
 }
 
-public function InitImage($red=0x46,$green=0x37,$blue=0x53,$width=140)
+protected function InitImage($red=0x46,$green=0x37,$blue=0x53,$width=140)
 {
-$this->pic = ImageCreateFrompng($this->template)  or die( "ERROR: no can create image.".$this->template );
-imagealphablending($this->pic, false)
+$this->pic = ImageCreateFrompng($this->template) or die( "ERROR: no can create image.".$this->template );
+imagealphablending($this->pic, true);
 imagesavealpha( $this->pic, true );
 $this->color = imagecolorallocate( $this->pic, $red, $green, $blue );
-$this->width = 140;
+$this->width = $width;
 }
 
-public function writeText($text,$maxsize=3,$offset=351,$size=31,$angle=0,$y=720)
+public function writeNumbers($text,$maxsize=3,$offset=351,$size=31,$angle=0,$y=720)
 {
 //
 if(strlen($text) > $maxsize) return die( "ERROR: maxsize text == ".$maxsize );
@@ -39,12 +39,13 @@ $center = round( $this->width/2 );
 $box = imagettfbbox( 30, 0, $this->font, $text );
 $position = $center-round(( $box[2]-$box[0])/2 );
 $position = $position + $offset ;
-imagefttext($this->pic, $size, $angle, $position, $y, $color, $this->font , $text) or 
+imagefttext($this->pic, $size, $angle, $position, $y, $this->color, $this->font , $text) or 
  die("Error: обратитесь к системному администратору." );
 }
 
 public function getImage()
 {
+header( 'Content-Type: image/png' );
 $this->pic = imagestyle($this->pic,'autosize:320 320;');
 Imagepng($this->pic); 
 }
