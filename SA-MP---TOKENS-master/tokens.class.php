@@ -1,5 +1,5 @@
 <?php
-require_once( "gd_imagestyle.php" );
+//require_once( "gd_imagestyle.php" );
 class tokens
 {
 private $font;
@@ -46,7 +46,7 @@ imagefttext($this->pic, $size, $angle, $position, $y, $this->color, $this->font 
 public function getImage()
 {
 header( 'Content-Type: image/png' );
-$this->pic = imagestyle($this->pic,'autosize:320 320;');
+//$this->pic = imagestyle($this->pic,'autosize:320 320;');
 Imagepng($this->pic); 
 }
 
