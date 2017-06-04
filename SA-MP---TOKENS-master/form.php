@@ -10,7 +10,6 @@ $font = "./fonts/arial.ttf";
 $what = htmlspecialchars( $_GET['w'] );
 $img = img($what);
 if( !$pic = ImageCreateFrompng($img) ) die( "ERROR: no can create image. ".$img );
-$text = htmlspecialchars( $_GET['n'] );
 if(strlen($text) > 3) die( "ERROR" );
 if(!is_numeric($text)) { ImageDestroy($pic);  die( "Вы ввели не правильное колл-во символов(не число)" ); }
 if(!$text > 99 and !$text < 1000){
