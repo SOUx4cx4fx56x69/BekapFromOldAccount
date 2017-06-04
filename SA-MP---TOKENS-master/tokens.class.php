@@ -20,6 +20,7 @@ $this->InitImage();
 public function InitImage($red=0x46,$green=0x37,$blue=0x53,$width=140)
 {
 $this->pic = ImageCreateFrompng($this->template)  or die( "ERROR: no can create image.".$this->template );
+imagealphablending($this->pic, false)
 imagesavealpha( $this->pic, true );
 $this->color = imagecolorallocate( $this->pic, $red, $green, $blue );
 $this->width = 140;
